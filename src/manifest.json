@@ -7,6 +7,8 @@
 	"transformPx": false,
 	"app-plus": { /* 5+App特有相关 */
 		"usingComponents": true,
+		"nvueCompiler" : "uni-app",
+		"compilerVersion" : 3,
 		"splashscreen": {
 			"alwaysShowBeforeRender": true,
 			"waiting": true,
@@ -52,9 +54,17 @@
 	},
 	"mp-weixin": { /* 微信小程序特有相关 */
 		"appid": "",
-		"setting": {
-			"urlCheck": false
+		"setting" : {
+			"urlCheck" : false,
+			"es6" : true,
+			"postcss" : true,
+			"minified" : true
 		},
-		"usingComponents": true
+		"usingComponents": true,
+		"permission" : {
+			"scope.userLocation" : {
+				"desc" : "你的位置信息将用于定位效果展示"
+			}
+		}
 	}
 }
